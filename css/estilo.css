@@ -1,0 +1,209 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+    /* Corpo */
+body {
+  font-family: 'Open Sans', sans-serif; /* leitura */
+    background-color: #f4f4f4; /* fundo */
+    color: #333;
+    line-height: 1.6; /*espaçamento verticar entre as linhas*/
+}
+
+/* HEADER */
+header {
+    background-color: #006633; /* verde IF */
+    color: white; /* texto branco */
+    padding: 20px; /* afasta o conteudo das bordas */
+    text-align: center; /* centraliza */
+    
+}
+
+/* Títulos */
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif; /* destaque */
+}
+
+header h1 {
+    margin-bottom: 5px; /* Cria um espaço em branco abaixo do elemento */
+}
+
+/* Menu */
+nav ul {
+    list-style: none; /* remove bolinhas */
+    margin-top: 10px; /*adiciona espaço acima de um elemento*/
+}
+
+/* Itens do menu */
+nav ul li {
+    display: inline-block; /* permite que elementos fiquem lado a lado na mesma linha e aceita outras definições */
+    margin: 0 10px;
+}
+
+/* Links */
+nav ul li a {
+    color: white;
+    text-decoration: none; /* sem sublinhado */
+    font-weight: bold; /*define a espessura*/
+    padding: 5px 8px;
+    border-radius: 4px; /*cantos arredondados*/
+    transition: 0.3s; /* animação */
+}
+
+/* Hover */
+nav ul li a:hover {
+    background-color: rgba(255,255,255,0.2); /* destaque */ /*mouse passa sobre ele.*/
+}
+
+/* Conteúdo */
+/* Área principal */
+main {
+    padding: 30px; 
+    max-width: 1000px; /* define a largura máxima de um elemento */
+    margin: auto; /* centraliza na tela */
+}
+/* SEÇÃO PRINCIPAL (DESTAQUE) */
+#info {
+    background: #ffffff; /* mantém branco */
+    padding: 40px 20px; /* mais espaço */
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* sombra mais forte */
+    border-top: 5px solid #006633; /* detalhe verde em cima */
+}
+
+/* Título principal */
+#info h1 {
+    font-size: 32px; /* maior destaque */
+    margin-bottom: 10px;
+}
+
+/* Texto */
+#info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Botão */
+#info .btn {
+    margin-top: 15px;
+    background-color: #cc0000; /* vermelho */
+    font-size: 16px;
+}
+
+/* Hover do botão */
+#info .btn:hover {
+    background-color: #990000;
+    transform: scale(1.05); /* leve zoom */
+}
+
+/* Seções */
+section {
+    background: white;
+    margin-bottom: 30px; /* mais espaço entre blocos */
+    padding: 25px;
+    border-left: 6px solid #006633; /* detalhe verde */
+    border-radius: 10px; /* mais suave */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* sombra melhor */
+    transition: 0.3s; /* animação */
+}
+
+/* Efeito ao passar o mouse */
+section:hover {
+    transform: translateY(-3px); /* levanta */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Títulos */
+h1, h2 {
+    margin-bottom: 12px;
+}
+
+/* Subtítulos */
+h2 {
+    color: #006633; /* verde */
+    position: relative; /* permite detalhe */
+    padding-bottom: 5px;
+}
+
+/* Linha decorativa abaixo do h2 */
+h2::after {
+    content: ""; /* cria linha */
+    display: block;
+    width: 50px; /* tamanho da linha */
+    height: 3px;  /*altura*/ 
+    background-color: #cc0000; /* vermelho IF */
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    background-color: #cc0000; /* vermelho */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #990000; /* escurece */
+    transform: scale(1.05); /* zoom */
+}
+
+/* Grid */
+.grid {
+    display: flex; /* flexbox */
+    gap: 15px; /* define o espaçamento (ou "calhas") entre linhas e colunas em contêineres de layout */
+    flex-wrap: wrap; /* quebra linha */
+}
+
+/* Cards */
+.grid article {
+    background: #e6f2ea; /* verde claro */
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1; /*item cresça e ocupe todo o espaço disponível*/
+    min-width: 200px; /*define a largura mínima de um elemento*/
+    transition: 0.3s;
+}
+
+.grid article:hover {
+    transform: translateY(-5px); /* sobe */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Formulário */
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão form */
+form button {
+    background-color: #006633;
+    color: white;
+    cursor: pointer; /*transforma o ponteiro do mouse em uma "mãozinha" ao passar sobre um elemento*/
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #004d26;
+}
+
+/* Rodapé */
+footer {
+    background-color: #006633;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
