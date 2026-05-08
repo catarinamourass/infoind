@@ -17,7 +17,10 @@ header {
     background-color: #006633; /* verde IF */
     color: white; /* texto branco */
     padding: 20px; /* afasta o conteudo das bordas */
-    text-align: center; /* centraliza */
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
 
@@ -27,20 +30,20 @@ h1, h2, h3 {
     font-family: 'Montserrat', sans-serif; /* destaque */
 }
 
+
 header h1 {
     margin-bottom: 5px; /* Cria um espaço em branco abaixo do elemento */
+    width: 100%;
+    text-align: center;
 }
 
 /* Menu */
 nav ul {
     list-style: none; /* remove bolinhas */
     margin-top: 10px; /*adiciona espaço acima de um elemento*/
-}
-
-/* Itens do menu */
-nav ul li {
-    display: inline-block; /* permite que elementos fiquem lado a lado na mesma linha e aceita outras definições */
-    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* Links */
@@ -69,10 +72,12 @@ main {
 #info {
     background: #ffffff; /* mantém branco */
     padding: 40px 20px; /* mais espaço */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* sombra mais forte */
     border-top: 5px solid #006633; /* detalhe verde em cima */
+    align-items: center;
 }
 
 /* Título principal */
@@ -101,7 +106,7 @@ main {
 }
 
 /* Seções */
-section {
+section  {
     background: white;
     margin-bottom: 30px; /* mais espaço entre blocos */
     padding: 25px;
@@ -110,6 +115,7 @@ section {
     box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* sombra melhor */
     transition: 0.3s; /* animação */
 }
+
 
 /* Efeito ao passar o mouse */
 section:hover {
@@ -179,12 +185,15 @@ h2::after {
 }
 
 /* Formulário */
+
+
 form input, form button {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    
 }
 
 /* Botão form */
@@ -203,7 +212,8 @@ form button:hover {
 footer {
     background-color: #006633;
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;;
     padding: 20px;
     margin-top: 20px;
 }
